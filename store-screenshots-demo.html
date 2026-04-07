@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scam Shield Screenshot Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #f4f8ff;
+        --text: #0f172a;
+        --muted: #475569;
+        --line: #dce6f3;
+        --card: #ffffff;
+        --brand: #1d4ed8;
+        --brand-soft: #dbeafe;
+        --low: #16a34a;
+        --mid: #d97706;
+        --high: #dc2626;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Source Sans 3", "Segoe UI", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(1200px 500px at 8% -5%, #d8e7ff 0%, transparent 55%),
+          radial-gradient(900px 450px at 95% 0%, #ecf4ff 0%, transparent 50%),
+          var(--bg);
+      }
+
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 28px 16px 40px;
+      }
+
+      .hero {
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 22px;
+        background: linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);
+        box-shadow: 0 14px 36px rgba(15, 23, 42, 0.08);
+      }
+
+      .hero h1 {
+        margin: 0;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        font-size: clamp(28px, 4vw, 42px);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+      }
+
+      .hero p {
+        margin: 10px 0 0;
+        max-width: 760px;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      .chips {
+        margin-top: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .chip {
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 7px 12px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .layout {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: 1.35fr 1fr;
+        gap: 14px;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--card);
+        padding: 16px;
+      }
+
+      .panel h2 {
+        margin: 0 0 10px;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        font-size: 22px;
+        letter-spacing: -0.01em;
+      }
+
+      .panel p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .checklist {
+        margin: 12px 0 0;
+        padding-left: 18px;
+      }
+
+      .checklist li + li {
+        margin-top: 8px;
+      }
+
+      .cards {
+        margin-top: 14px;
+        display: grid;
+        gap: 12px;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 14px;
+        background: #fff;
+      }
+
+      .card h3 {
+        margin: 0;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        font-size: 18px;
+      }
+
+      .tag {
+        display: inline-block;
+        margin-top: 8px;
+        border-radius: 999px;
+        padding: 4px 9px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .tag.low {
+        color: #115e30;
+        background: #eaf8ef;
+      }
+
+      .tag.mid {
+        color: #9a4f07;
+        background: #fff2de;
+      }
+
+      .tag.high {
+        color: #9f1239;
+        background: #ffe4e6;
+      }
+
+      .links {
+        margin: 12px 0 0;
+        padding-left: 18px;
+      }
+
+      .links li + li {
+        margin-top: 7px;
+      }
+
+      a {
+        color: var(--brand);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
+        word-break: break-all;
+      }
+
+      .footer {
+        margin-top: 14px;
+        border: 1px dashed #b9c9de;
+        background: var(--brand-soft);
+        color: #1e3a8a;
+        border-radius: 14px;
+        padding: 12px;
+        font-size: 14px;
+      }
+
+      @media (max-width: 960px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="hero">
+        <h1>Scam Shield Screenshot Demo</h1>
+        <p>
+          Use this page to capture Chrome Web Store screenshots that clearly show link risk detection,
+          warning prompts, and the overall product experience.
+        </p>
+        <div class="chips">
+          <span class="chip">English only</span>
+          <span class="chip">Safe demo links</span>
+          <span class="chip">Low / Medium / High examples</span>
+          <span class="chip">Made for screenshot capture</span>
+        </div>
+      </section>
+
+      <section class="layout">
+        <article class="panel">
+          <h2>Suggested Screenshot Flow</h2>
+          <p>Take screenshots in this order so the store listing tells a clear story:</p>
+          <ol class="checklist">
+            <li>Hover a low-risk link and capture the calm tooltip.</li>
+            <li>Hover a medium-risk link and capture the changed score/reasons.</li>
+            <li>Hover a high-risk link and capture the high-risk tooltip.</li>
+            <li>Click a high-risk link and capture the warning modal.</li>
+            <li>Open the extension popup and capture suspicious-link history.</li>
+          </ol>
+          <div class="footer">
+            Tip: zoom browser to 110% or 125% if you want larger, easier-to-read labels in screenshots.
+          </div>
+        </article>
+
+        <article class="panel">
+          <h2>Ready-to-Use Demo Links</h2>
+          <p>These URLs are intentionally structured to trigger different risk levels in Scam Shield.</p>
+          <div class="cards">
+            <section class="card">
+              <h3>Low Risk Set</h3>
+              <span class="tag low">Expected: LOW</span>
+              <ul class="links">
+                <li><a href="https://www.nasa.gov/" target="_blank" rel="noopener">https://www.nasa.gov/</a></li>
+                <li><a href="https://www.khanacademy.org/" target="_blank" rel="noopener">https://www.khanacademy.org/</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/</a></li>
+              </ul>
+            </section>
+
+            <section class="card">
+              <h3>Medium Risk Set</h3>
+              <span class="tag mid">Expected: MEDIUM</span>
+              <ul class="links">
+                <li><a href="https://example.com/support-center/update" target="_blank" rel="noopener">https://example.com/support-center/update</a></li>
+                <li><a href="https://example.com/verify/account/confirm" target="_blank" rel="noopener">https://example.com/verify/account/confirm</a></li>
+                <li><a href="https://secure-help-desk-example.com/login-assist" target="_blank" rel="noopener">https://secure-help-desk-example.com/login-assist</a></li>
+              </ul>
+            </section>
+
+            <section class="card">
+              <h3>High Risk Set</h3>
+              <span class="tag high">Expected: HIGH + modal on click</span>
+              <ul class="links">
+                <li><a href="http://185.199.111.153/login/verify-account?confirm=password" target="_blank" rel="noopener">http://185.199.111.153/login/verify-account?confirm=password</a></li>
+                <li><a href="https://secure-login-update-confirm-account-center.example/verify/password/bank" target="_blank" rel="noopener">https://secure-login-update-confirm-account-center.example/verify/password/bank</a></li>
+                <li><a href="https://support-account-verify-update-security-check.example/login/confirm/account" target="_blank" rel="noopener">https://support-account-verify-update-security-check.example/login/confirm/account</a></li>
+              </ul>
+            </section>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
